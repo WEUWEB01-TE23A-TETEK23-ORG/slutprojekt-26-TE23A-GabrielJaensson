@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+footer img {
+    width: 12px;
+}
+
+/* sidan */
+body {
+    font-family: "Lexend Exa", sans-serif;
+    background-image: url(https://yorath.co/wp-content/uploads/2024/06/16-787B-sqArtboard-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.kontainer {
+    width: 1100px;
+    margin: auto;
+    border: #4d00a5;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    grid-template-areas: 
+    "head head"
+    "main side"
+    "foot foot"
+    ;
+}
+
+/* sidhuvud och meny */
+header {
+    border-radius: 10px;
+    grid-area: head;
+    width: 1100px;
+}
+header h1{
+    color: #ff7c00;
+    font-size: 50px;
+}
+header nav{
+    background: linear-gradient(to bottom,  #ffb76b 8%,#ffa73d 21%,#ffa73d 21%,#ffa73d 41%,#ffa73d 51%,#ffa73d 51%,#ff7c00 80%,#ffa73d 90%,#ffa73d 90%,#ffa73d 99%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 12px;
+}
+header nav a{
+    text-decoration: none;
+}
+header nav a.aktiv{
+    color: rgb(54, 144, 120);
+    background: linear-gradient(to bottom,  #ff5d90 0%,#ef014c 31%,#ef017c 53%,#ef014c 72%,#ef014c 72%,#ef017c 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 12px;
+
+}
+header nav a:hover{
+    color: blueviolet;
+}
+
+/* innehåll */
+main{
+    background-color: aqua;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    grid-template-areas: 
+    "fig1"
+    "tfig2"
+    ;
+}
+main article figure .fig1{
+    grid-area: fig1;
+}
+main article figure .fig2{
+    grid-area: fig2;
+}
+main article .bild1{
+    grid-area: bild1;
+}
+main article .bild2{
+    grid-area: bild2;
+}
+main article h2 .text1{
+    grid-area: text1;
+}
+main article h3 .text2{
+    grid-area: text2;
+}
+main article figure img{}
+main article figure figcaption{}
+main article figure figcaption p{}
+
+/* sidebar */
+aside{
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: side;
+}
+aside h4{
+    text-align: center;
+}
+aside p{}
+aside p a{}
+
+/* sidfot */
+footer{
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: foot;
+}
+footer p{}
