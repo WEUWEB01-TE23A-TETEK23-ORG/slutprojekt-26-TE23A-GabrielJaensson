@@ -74,29 +74,6 @@ main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px;
-    grid-template-areas: 
-    "fig1"
-    "tfig2"
-    ;
-}
-main article figure .fig1{
-    grid-area: fig1;
-}
-main article figure .fig2{
-    grid-area: fig2;
-}
-main article .bild1{
-    grid-area: bild1;
-}
-main article .bild2{
-    grid-area: bild2;
-}
-main article h2 .text1{
-    grid-area: text1;
-}
-main article h3 .text2{
-    grid-area: text2;
 }
 main article figure img{}
 main article figure figcaption{}
