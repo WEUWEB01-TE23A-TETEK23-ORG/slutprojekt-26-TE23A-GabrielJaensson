@@ -49,9 +49,11 @@ header h1{
 header nav{
     background: #c49300c0;
     padding: 12px;
+    width: 1000px;
 }
 header nav a{
     text-decoration: none;
+    padding: 20px;
 }
 header nav a.aktiv{
     color: rgb(255, 255, 255);
