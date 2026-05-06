@@ -8,10 +8,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body, h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
-    padding: 0;
-}
 img{
     width: 100%;
 }
@@ -22,18 +18,17 @@ footer img {
 /* sidan */
 body {
     font-family: "Lexend Exa", sans-serif;
-    background-image: url();
+    background-image: url(https://i.pinimg.com/736x/19/af/0e/19af0ea341f44c8f61fa06916db7770d.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 .kontainer {
-    width: 1100px;
+    width: 95%;
     margin: auto;
     border: #4d00a5;
-    padding: 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 30px;
+    gap: 20px;
     grid-template-areas: 
     "head head"
     "main side"
@@ -48,70 +43,80 @@ header {
     width: 1100px;
 }
 header h1{
-    color: #ff7c00;
+    color: #ffffff;
     font-size: 50px;
 }
 header nav{
-    background: linear-gradient(to bottom,  #ffb76b 8%,#ffa73d 21%,#ffa73d 21%,#ffa73d 41%,#ffa73d 51%,#ffa73d 51%,#ff7c00 80%,#ffa73d 90%,#ffa73d 90%,#ffa73d 99%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #c49300c0;
     padding: 12px;
 }
 header nav a{
     text-decoration: none;
 }
 header nav a.aktiv{
-    color: rgb(54, 144, 120);
+    color: rgb(255, 255, 255);
     background: linear-gradient(to bottom,  #ff5d90 0%,#ef014c 31%,#ef017c 53%,#ef014c 72%,#ef014c 72%,#ef017c 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     padding: 12px;
 
 }
 header nav a:hover{
-    color: blueviolet;
+    color: rgb(230, 19, 19);
 }
 
 /* innehåll */
 main{
-    background-color: aqua;
-    border-radius: 10px;
-    padding: 20px;
+    padding: 0;
+    background-color: rgb(2, 14, 83);
     grid-area: main;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
 }
-main article{}
-main article h2{
+main article figure h2{
+    color: #ffffff;
+}
+main article figure p{
+    color: #ffffff;
+}
+main article figure h3{
+    color: #ffffff;
+}
+main article figure figcaption {
+    color: #ffffff;
     text-align: center;
-    margin-bottom: 15px;
-}
-main article figure{
-    width: 50%;
+    font-size: 20px;
     padding: 20px;
-    border: 1px solid #565656;
-    margin: auto;
-    margin-bottom: 15px;
-}
-main article h3{
-    text-align: center;
-}
-main article figure img{}
-main article figure figcaption{}
-main article figure figcaption p{
-    margin-bottom: 15px;
 }
 
 /* sidebar */
 aside{
-    background-color: aqua;
+    background-color: rgb(219, 17, 17);
     border-radius: 10px;
     padding: 20px;
     grid-area: side;
 }
 aside h4{
     text-align: center;
+    color: #ffffff;
 }
-aside p{}
+aside button{
+    margin: auto;
+    width: 100%;
+    color: #ffffff;
+    background-color: #c49300c0;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+aside p{
+    color: #ffffff;
+}
 aside p a{}
 
 /* sidfot */
 footer{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 20px;
     grid-area: foot;

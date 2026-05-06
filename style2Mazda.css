@@ -27,13 +27,12 @@ body {
     background-size: cover;
 }
 .kontainer {
-    width: 1100px;
+    width: 95%;
     margin: auto;
     border: #4d00a5;
-    padding: 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 30px;
+    gap: 20px;
     grid-template-areas: 
     "head head"
     "main side"
@@ -48,11 +47,12 @@ header {
     width: 1100px;
 }
 header h1{
-    color: #ff7c00;
+    color: #ffffff;
     font-size: 50px;
 }
 header nav{
-    background: linear-gradient(to bottom,  #ffb76b 8%,#ffa73d 21%,#ffa73d 21%,#ffa73d 41%,#ffa73d 51%,#ffa73d 51%,#ff7c00 80%,#ffa73d 90%,#ffa73d 90%,#ffa73d 99%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #009600;
+    background: linear-gradient(90deg,rgba(0, 150, 0, 1) 30%, rgba(209, 98, 0, 1) 84%);
     padding: 12px;
 }
 header nav a{
@@ -65,36 +65,59 @@ header nav a.aktiv{
 
 }
 header nav a:hover{
-    color: blueviolet;
+    color: rgb(230, 19, 19);
 }
 
 /* innehåll */
 main{
-    background-color: aqua;
+    padding: 0;
+    background-color: rgb(255, 132, 0);
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-main article figure img{}
-main article figure figcaption{}
-main article figure figcaption p{}
+main article figure img{
+   
+    padding-left: -20px;
+}
+main article figure h2{
+    padding: 10px;
+}
+main article figure h3{
+    padding: 7.5px;
+}
+main article figure figcaption{
+    font-size: 20px;
+    font-weight: 500;
+    color: #004100;
+    text-decoration: underline;
+}
+main article figure p{
+    font-size: 16px;
+}
+main article figure button{
+    font-size: 25px;
+    background-color: rgb(255, 132, 0);
+    border: none;
+    padding: 20px;
+    width: 100%;
+    text-decoration: underline rgb(7, 136, 0);
+}
 
 /* sidebar */
 aside{
-    background-color: aqua;
-    border-radius: 10px;
-    padding: 20px;
-    grid-area: side;
+    background-color: rgb(155, 217, 246);
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-aside h4{
-    text-align: center;
-}
-aside p{}
-aside p a{}
 
 /* sidfot */
 footer{
-    background-color: aqua;
+    background: #D16200;
+    background: linear-gradient(90deg,rgba(209, 98, 0, 1) 45%, rgba(0, 150, 0, 1) 64%);
     border-radius: 10px;
     padding: 20px;
     grid-area: foot;
