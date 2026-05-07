@@ -22,18 +22,17 @@ footer img {
 /* sidan */
 body {
     font-family: "Lexend Exa", sans-serif;
-    background-image: url();
+    background-image: url(https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/815/cached.offlinehbpl.hbpl.co.uk/news/OMC/Silk-Cut-20181019103323416.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 .kontainer {
-    width: 1100px;
+    width: 95%;
     margin: auto;
     border: #4d00a5;
-    padding: 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 30px;
+    gap: 20px;
     grid-template-areas: 
     "head head"
     "main side"
@@ -48,70 +47,92 @@ header {
     width: 1100px;
 }
 header h1{
-    color: #ff7c00;
+    color: #b300ff;
     font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: overline underline;
 }
 header nav{
-    background: linear-gradient(to bottom,  #ffb76b 8%,#ffa73d 21%,#ffa73d 21%,#ffa73d 41%,#ffa73d 51%,#ffa73d 51%,#ff7c00 80%,#ffa73d 90%,#ffa73d 90%,#ffa73d 99%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #020202;
+    background: linear-gradient(90deg,rgb(228, 84, 250) 30%, rgb(175, 64, 255) 84%);
     padding: 12px;
+    width: 1010px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 header nav a{
     text-decoration: none;
+    padding: 20px;
 }
 header nav a.aktiv{
-    color: rgb(54, 144, 120);
-    background: linear-gradient(to bottom,  #ff5d90 0%,#ef014c 31%,#ef017c 53%,#ef014c 72%,#ef014c 72%,#ef017c 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: rgba(0, 0, 0, 0.514);
+    background: linear-gradient(to bottom,  #ff41e6 0%,#d664ff 31%,#8d28bb 53%,#ae0fc7 72%,#ad41ff 72%,#7700ff 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     padding: 12px;
-
 }
 header nav a:hover{
-    color: blueviolet;
+    color: rgb(230, 19, 19);
 }
 
 /* innehåll */
 main{
-    background-color: aqua;
-    border-radius: 10px;
-    padding: 20px;
+    padding: 0;
+    background: linear-gradient(90deg,rgb(93, 0, 200) 30%, rgb(162, 0, 255) 84%);
     grid-area: main;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-main article{}
-main article h2{
+main article figure img{
+    padding-left: -20px;
+}
+main article figure h2{
+    padding: 10px;
+}
+main article figure h3{
+    padding: 50≈px;
+}
+main article figure figcaption{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: underline;
     text-align: center;
-    margin-bottom: 15px;
+    padding: 10px;
 }
-main article figure{
-    width: 50%;
+main article figure p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+main article figure button{
+    color: #2e0063;
+    font-size: 25px;
+    background-color: rgba(98, 0, 255, 0.604);
+    border: none;
     padding: 20px;
-    border: 1px solid #565656;
-    margin: auto;
-    margin-bottom: 15px;
-}
-main article h3{
-    text-align: center;
-}
-main article figure img{}
-main article figure figcaption{}
-main article figure figcaption p{
-    margin-bottom: 15px;
+    width: 100%;
+    text-decoration: underline rgba(175, 74, 253, 0.618);
 }
 
 /* sidebar */
 aside{
-    background-color: aqua;
-    border-radius: 10px;
+    background-color: rgb(211, 211, 211);
     padding: 20px;
-    grid-area: side;
-}
-aside h4{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     text-align: center;
 }
-aside p{}
-aside p a{}
+aside h2{
+    padding: 20px;
+    font-size: 20px;
+}
+
 
 /* sidfot */
 footer{
-    background-color: aqua;
+    background: #D16200;
+    background: linear-gradient(90deg,rgb(115, 115, 115) 45%, rgb(149, 149, 149) 64%);
     border-radius: 10px;
     padding: 20px;
     grid-area: foot;

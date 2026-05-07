@@ -22,7 +22,7 @@ footer img {
 /* sidan */
 body {
     font-family: "Lexend Exa", sans-serif;
-    background-image: url();
+    background-image: url(https://gallery.yopriceville.com/var/resizes/Backgrounds/Silver_Metal_Background.png?m=1629825896);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -47,15 +47,14 @@ header {
     width: 1100px;
 }
 header h1{
-    color: #076700;
+    color: #000000;
     font-size: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
-    width: 500px;
 }
 header nav{
-    background: #009600;
-    background: linear-gradient(90deg,rgba(0, 150, 0, 1) 30%, rgba(209, 98, 0, 1) 84%);
+    background: #020202;
+    background: linear-gradient(90deg,rgb(126, 126, 126) 30%, rgb(255, 255, 255) 84%);
     padding: 12px;
     width: 1010px;
     border-bottom-left-radius: 5px;
@@ -66,8 +65,8 @@ header nav a{
     padding: 20px;
 }
 header nav a.aktiv{
-    color: rgb(54, 144, 120);
-    background: linear-gradient(to bottom,  #ff5d90 0%,#ef014c 31%,#ef017c 53%,#ef014c 72%,#ef014c 72%,#ef017c 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: rgba(0, 0, 0, 0.514);
+    background: linear-gradient(to bottom,  #cdcccc 0%,#c1c1c1 31%,#acacac 53%,#9a9a9a 72%,#a1a1a1 72%,#848484 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     padding: 12px;
 }
 header nav a:hover{
@@ -77,7 +76,7 @@ header nav a:hover{
 /* innehåll */
 main{
     padding: 0;
-    background-color: rgb(255, 132, 0);
+    background: linear-gradient(90deg,rgb(255, 255, 255) 30%, rgb(126, 126, 126) 84%);
     grid-area: main;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -85,7 +84,6 @@ main{
     border-bottom-left-radius: 20px;
 }
 main article figure img{
-   
     padding-left: -20px;
 }
 main article figure h2{
@@ -97,33 +95,42 @@ main article figure h3{
 main article figure figcaption{
     font-size: 20px;
     font-weight: 500;
-    color: #004100;
+    color: #000000;
     text-decoration: underline;
+    text-align: center;
+    padding: 10px;
 }
 main article figure p{
     font-size: 16px;
+    padding-bottom: 20px;
 }
 main article figure button{
     font-size: 25px;
-    background-color: rgb(255, 132, 0);
+    background-color: rgb(136, 136, 136);
     border: none;
     padding: 20px;
     width: 100%;
-    text-decoration: underline rgb(7, 136, 0);
+    text-decoration: underline rgb(100, 100, 100);
 }
 
 /* sidebar */
 aside{
     background-color: rgb(211, 211, 211);
-    padding: 10px;
+    padding: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    text-align: center;
 }
+aside h2{
+    padding: 20px;
+    font-size: 20px;
+}
+
 
 /* sidfot */
 footer{
     background: #D16200;
-    background: linear-gradient(90deg,rgba(209, 98, 0, 1) 45%, rgba(0, 150, 0, 1) 64%);
+    background: linear-gradient(90deg,rgb(115, 115, 115) 45%, rgb(149, 149, 149) 64%);
     border-radius: 10px;
     padding: 20px;
     grid-area: foot;
